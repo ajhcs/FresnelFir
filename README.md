@@ -29,7 +29,7 @@ This is the same verification methodology used in hardware design (where shippin
 
 AI coding assistants can generate thousands of lines of code per hour. No human team can review that volume with the rigor needed for production systems. FresnelFir closes the gap: the AI writes code, FresnelFir proves it correct (or finds where it isn't), and the AI fixes what's broken — in an automated loop with no human bottleneck.
 
-FresnelFir's core algorithms originate from four US patents developed at **Silicon Forest Research**, which later merged into **Lighthouse Design Automation**. The patents cover NDA (Nested Data Abstraction) graph traversal, the fracture/solve/abort constraint decomposition strategy, and modification directives for adaptive exploration. These techniques were originally designed for hardware verification and have been reimplemented here for software.
+FresnelFir's core algorithms originate from four US patents. The patents cover NDA (Nested Data Abstraction) graph traversal, the fracture/solve/abort constraint decomposition strategy, and modification directives for adaptive exploration.
 
 ## Key Features
 
@@ -225,15 +225,6 @@ FresnelFir is pre-1.0. APIs may change between minor versions. The core verifica
 | Async runtime | Tokio (MCP server only) |
 | Serialization | serde + serde_json |
 | RNG | rand_chacha (deterministic, seedable) |
-
-## Heritage
-
-FresnelFir's name honors its origins:
-
-- **Fresnel** — from [Lighthouse Design Automation](https://en.wikipedia.org/wiki/Fresnel_lens), where the core verification patents were developed. A Fresnel lens focuses light into a directed beam; FresnelFir focuses verification onto code.
-- **Fir** — from Silicon Forest Research, the original patent holder. Silicon Forest is the technology hub of the Pacific Northwest, named for the Douglas fir trees of Oregon.
-
-The four US patents covering NDA traversal, fracture/solve/abort, and modification directives form the algorithmic foundation of FresnelFir's exploration engine.
 
 ## Contributing
 
