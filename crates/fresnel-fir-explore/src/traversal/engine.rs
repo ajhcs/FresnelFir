@@ -196,7 +196,9 @@ impl<'a, V: VectorSource, E: ActionExecutor> TraversalEngine<'a, V, E> {
                     let guard_passed = if let Some(ref guard_expr) = guard {
                         let bindings = self.make_bindings();
                         matches!(
-                            fresnel_fir_model::eval::eval_in_model(guard_expr, self.model, &bindings),
+                            fresnel_fir_model::eval::eval_in_model(
+                                guard_expr, self.model, &bindings
+                            ),
                             Ok(Value::Bool(true))
                         )
                     } else {

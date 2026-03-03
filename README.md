@@ -6,7 +6,7 @@ FresnelFir catches bugs that tests miss. You describe *what your code should do*
 
 Built in Rust. Runs your code in a WASM sandbox. Finds real bugs with formal methods, not just the ones you thought to test for.
 
-[![CI](https://github.com/ajhcs/Beacon/actions/workflows/ci.yml/badge.svg)](https://github.com/ajhcs/Beacon/actions/workflows/ci.yml)
+[![CI](https://github.com/ajhcs/FresnelFir/actions/workflows/ci.yml/badge.svg)](https://github.com/ajhcs/FresnelFir/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
@@ -87,8 +87,8 @@ FresnelFir is a Cargo workspace of seven composable crates, organized in progres
 ### Clone and verify
 
 ```bash
-git clone https://github.com/ajhcs/Beacon.git
-cd Beacon
+git clone https://github.com/ajhcs/FresnelFir.git
+cd FresnelFir
 cargo test --workspace
 ```
 
@@ -152,7 +152,7 @@ Specifications are JSON documents with nine required sections:
 - **exploration** sets traversal strategy and coverage targets
 - **inputs/bindings** wire the spec to your actual WASM module
 
-See [`docs/beacon-ir-schema.md`](docs/beacon-ir-schema.md) for the complete schema reference with examples.
+See [`docs/fresnel-fir-ir-schema.md`](docs/fresnel-fir-ir-schema.md) for the complete schema reference with examples.
 
 ### The Solver: Fracture/Solve/Abort
 
@@ -170,7 +170,7 @@ This gives you the thoroughness of exhaustive testing with the speed of directed
 Cargo.toml                    Workspace definition
 crates/                       All seven Rust crates
 docs/
-  beacon-ir-schema.md         Complete IR specification reference
+  fresnel-fir-ir-schema.md    Complete IR specification reference
   architecture.md             System architecture overview
   troubleshooting.md          Common issues and solutions
   plans/                      Design documents and implementation plans

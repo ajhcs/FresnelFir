@@ -59,7 +59,7 @@ cargo check
 **Key directories:**
 - `crates/` — All Rust crates (source + tests)
 - `docs/plans/` — Implementation plan (layer-by-layer breakdown)
-- `docs/beacon-ir-schema.md` — Complete IR specification (human-readable reference)
+- `docs/fresnel-fir-ir-schema.md` — Complete IR specification (human-readable reference)
 - `.claude/plugins/fresnel-fir/` — Claude Code plugin skills and hooks (Socratic workflow, smoke checks)
 
 ## Key Configuration
@@ -74,7 +74,7 @@ cargo check
 **.gitignore:**
 - `/target` (build artifacts only)
 
-**FresnelFir IR Schema** (`docs/beacon-ir-schema.md`):
+**FresnelFir IR Schema** (`docs/fresnel-fir-ir-schema.md`):
 - 9 required top-level sections: entities, refinements, functions, protocols, effects, properties, generators, exploration, inputs, bindings
 - All sections required (use empty objects/arrays if unused)
 - Expression language: JSON arrays with operator tags (no string parsing)

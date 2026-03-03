@@ -14,7 +14,9 @@ fn test_parse_literal_bool() {
 fn test_parse_literal_string() {
     let json = serde_json::json!("public");
     let expr: Expr = serde_json::from_value(json).unwrap();
-    assert!(matches!(expr, Expr::Literal(fresnel_fir_ir::expr::Literal::String(s)) if s == "public"));
+    assert!(
+        matches!(expr, Expr::Literal(fresnel_fir_ir::expr::Literal::String(s)) if s == "public")
+    );
 }
 
 #[test]

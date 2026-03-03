@@ -10,7 +10,7 @@ You are guiding a human through formal specification authoring for the FresnelFi
 
 **Key principle:** The human provides intent. You translate to formal constraints. FresnelFir verifies. The human never writes JSON.
 
-**Reference:** Read `docs/beacon-ir-schema.md` for the complete IR schema before starting.
+**Reference:** Read `docs/fresnel-fir-ir-schema.md` for the complete IR schema before starting.
 
 ## Phase 1: Domain Discovery
 
